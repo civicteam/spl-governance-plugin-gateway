@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "programs/*",
+    # Drop everything below this line before running "anchor publish":
+]

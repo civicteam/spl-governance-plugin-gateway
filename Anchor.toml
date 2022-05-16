@@ -1,0 +1,18 @@
+anchor_version = "0.20.1"
+solana_version = "1.9.5"
+
+[programs.localnet]
+plugin_boilerplate = "4Q6WW2ouZ6V3iaNm56MTd5n2tnTm4C5fiH8miFHnAFHo"
+
+[programs.devnet]
+plugin_boilerplate = "4Q6WW2ouZ6V3iaNm56MTd5n2tnTm4C5fiH8miFHnAFHo"
+
+[programs.mainnet]
+plugin_boilerplate = "4Q6WW2ouZ6V3iaNm56MTd5n2tnTm4C5fiH8miFHnAFHo"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/*.ts"
